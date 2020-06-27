@@ -9,7 +9,7 @@ Assembled by Sohyeon Yim (2020-06-28)
 ### R sqaured   
 ### Adujusted R squared   
 
-## 👀  Classificaion Model의 경우 -> Confusion Matrix    
+## 👀  Classification Model의 경우 -> Confusion Matrix    
 ### Accuracy(정확도)   
 
 ### Precision(정밀도)      
