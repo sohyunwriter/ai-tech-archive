@@ -21,6 +21,7 @@ Assembled by Sohyeon Yim (2020-06-28)
 ### F beta Measure   
 ![fb score](https://user-images.githubusercontent.com/44013936/85926952-cd4ed400-b8dd-11ea-946d-6c41af678041.JPG)
 * general formula for positive real β, where recall is considered β times as important as precision   
+* 실무에서는 F1-measure보다 F-beta measure를 더 많이 쓴다. precision이나 recall에 가중치를 주고 싶을 때, 이 식을 사용하면 된다. precision에 가중치 3을 주고 싶으면 β에 1/3을 대입하면 된다. 한편 recall에 가중치 3을 주고 싶으면 β에 3을 대입하면 된다.    
 
 #### F1-Measure (beta = 1.0)   
 * Balance the weight on precision and recall   
