@@ -1,7 +1,7 @@
 ## Evaluation Metric    
 Assembled by Sohyeon Yim (2020-06-28)   
 
-## Regression Model의 경우    
+## 👀  Regression Model의 경우    
 ### MSE   
 ### RMSE    
 ### MAE   
@@ -9,7 +9,7 @@ Assembled by Sohyeon Yim (2020-06-28)
 ### R sqaured   
 ### Adujusted R squared   
 
-## Classificaion Model -> Confusion Matrix    
+## 👀  Classificaion Model의 경우 -> Confusion Matrix    
 ### Accuracy(정확도)   
 
 ### Precision(정밀도)      
