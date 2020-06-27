@@ -35,5 +35,14 @@ Assembled by Sohyeon Yim (2020-06-28)
 ### Sensitivity(민감도)    
 ### Specificity(특이도)   
 
+## 👀  Object Detection Model의 경우    
+### AP   
+### mAP   
+### IoU  
+### AR   
+### FPS   
+
+
+
 ## Reference & Additional Resources    
 [A Gentle Introduction to the Fbeta-Measure for Machine Learning](https://machinelearningmastery.com/fbeta-measure-for-machine-learning/)
