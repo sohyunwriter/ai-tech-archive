@@ -1,5 +1,5 @@
 ## Regex
-- Assembled by Sohyeon Yim (2020-07-06)    
+-Assembled by Sohyeon Yim (2020-07-06)    
 
 * ^ : 이 패턴으로 시작해야 함     
    > ^abc : abc로 시작해야 함 (abcd, abc12 등)    
