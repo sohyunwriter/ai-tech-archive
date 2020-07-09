@@ -21,7 +21,7 @@ SELECT NAME FROM STUDENT WHERE AGE BETWEEN 20 AND 25
 * e.g. URL 형태로 존재(HTML), 오픈 API 형태로 제공(XML, JSON), 로그 형태(웹로그, IOT에서 제공하는 센서 데이터)   
 ![반정형 데이터](https://user-images.githubusercontent.com/44013936/84293560-eb4cd280-ab82-11ea-9251-944d2745ccf4.gif)   
 
-## 비정형 데이터(Unstruured Data)   
+## 비정형 데이터(Unstructured Data)   
 * 데이터 세트가 아닌 하나의 데이터가 수집 데이터로 객체화돼 있다.   
 * 데이터를 파싱해 탐색한다.   
 * e.g. 텍스트, 이미지, 동영상 등   
