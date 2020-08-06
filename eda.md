@@ -7,7 +7,7 @@ Assembled by Sohyeon Yim (2020-08-06)
 3. EDA 도구들   
 
 ## EDA 정의   
-- 데이터를 분석하기 전 그래프나 통계적인 방법으로 자료 분석   
+- Exploratory Data Analysis : 데이터를 분석하기 전 그래프나 통계적인 방법으로 자료 분석   
 
 ## 👀 EDA를 하는 이유   
 - garbage in, garbage out 하기 위해 필요   
@@ -32,3 +32,4 @@ Assembled by Sohyeon Yim (2020-08-06)
 
 ## Reference & Additional Resources      
 [eda 데이터 설명서에서 시작하기](https://medium.com/mighty-data-science-bootcamp/eda-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%84%A4%EB%AA%85%EC%84%9C%EC%97%90%EC%84%9C-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-230060b9fc17)
+[EDA](https://eda-ai-lab.tistory.com/13)
