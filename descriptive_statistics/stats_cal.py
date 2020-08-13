@@ -94,30 +94,6 @@ def know_numericOrNon(ms, num):
         return nonNumericList
     else:
         return
-
-def ds_before(df, ms):
-    summary = df.describe()  # 1사분위수, 2사분위수, 3사분위수, 중앙값, 평균
-    colName_series = ms.loc[:, 'name'].rename("구분").astype(str)
-    count_series = df.count().rename("데이터 수").astype(str)
-    unique_series = countUnique(df).rename("유일한 값 개수").astype(str)
-    null_series = df.isnull().sum().rename("결측치 수").astype(str)
-    mean_series = summary.loc['mean', :].rename("평균")
-    median_series = summary.loc['50%'].rename("중앙값")
-    #mode_series = knowMostCommon(df).rename("최빈값")
-    max_series = df.max(numeric_only=True).rename("최댓값")
-    min_series = df.min(numeric_only=True).rename("최솟값")
-    range_series = (max_series - min_series).rename("범위")
-    per1_series = summary.loc['25%'].rename("1사분위수")
-    per2_series = summary.loc['50%'].rename("2사분위수")
-    per3_series = summary.loc['75%'].rename("3사분위수")
-    std_series = summary.loc['std'].rename("표준편차")
-    kurtosis_series = df.kurtosis().rename("첨도")
-    skew_series = df.skew().rename("왜도")
-    final = pd.concat([colName_series, count_series, unique_series, null_series, mean_series, \
-                       median_series, max_series, min_series, range_series, per1_series, \
-                       per2_series, per3_series, std_series, kurtosis_series, skew_series], axis=1, ignore_index=False).T
-    final.fillna("해당 없음", inplace=True)
-    return final
  
 def ds(df, ms):
     summary = df.describe()  # 1사분위수, 2사분위수, 3사분위수, 중앙값, 평균
