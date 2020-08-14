@@ -62,7 +62,7 @@ def countUnique(df):  # 유일한 값 개수
     unique_series = pd.Series(unique_list, index=df.columns, name='유일한 값 개수')
     return unique_series
 
-def multipleMostCommon(df, columnName):  # 열별로 최빈값 알아내기
+def multipleMostCommon_before(df, columnName):  # 열별로 최빈값 알아내기
     commonList = Counter(df[columnName]).most_common()
     mode_list = []
     modeNum = commonList[0][1]
@@ -73,11 +73,24 @@ def multipleMostCommon(df, columnName):  # 열별로 최빈값 알아내기
             mode_list.append(commonList[i][0])
     return mode_list
 
-def knowMostCommon(df):  # 최빈값
+def knowMostCommon_before(df):  # 최빈값(not used)
     modelist = []
     for i in range(len(df.columns)):
         modelist.append(multipleMostCommon(df, df.columns[i]))
     mode_series = pd.Series(modelist, index=df.columns, name='최빈값')
+    return mode_series
+
+def knowMostCommon(df):
+    modelist = []
+    for column in df.columns:
+        temp = df[column].mode().astype(str).values.tolist()
+        if len(temp) < 5: 
+            modelist.append(str(temp))
+        else:
+            modelist.append(str(temp[0]))
+        #modelist.append() # [str, str]
+    mode_series = pd.Series(modelist, index=df.columns, name='최빈값')
+    mode_series = mode_series.astype(str)
     return mode_series
 
 def know_numericOrNon(ms, num):
@@ -109,7 +122,7 @@ def ds(df, ms):
     #median_series = summary.loc['50%'].rename("중앙값")
     median_series = summary.loc['50%'].rename("중앙값").apply(lambda x : "{:,}".format(round(x, 2)))
     
-    #mode_series = knowMostCommon(df).rename("최빈값")
+    mode_series = knowMostCommon(df).rename("최빈값").astype(str)
     
     max_series_num = df.max(numeric_only=True).rename("최댓값")
     max_series = max_series_num.apply(lambda x : "{:,}".format(round(x, 2)))
@@ -124,7 +137,7 @@ def ds(df, ms):
     kurtosis_series = df.kurtosis(numeric_only=True).rename("첨도").dropna().apply(lambda x : "{:,}".format(round(x, 2)))
     skew_series = df.skew(numeric_only=True).rename("왜도").apply(lambda x : "{:,}".format(round(x, 2)))
     final = pd.concat([colName_series, count_series, unique_series, null_series, mean_series, \
-                       median_series, max_series, min_series, range_series, per1_series, \
+                       median_series, mode_series, max_series, min_series, range_series, per1_series, \
                        per2_series, per3_series, std_series, kurtosis_series, skew_series], axis=1, ignore_index=False).T
     final.fillna("해당 없음", inplace=True)
     return final
