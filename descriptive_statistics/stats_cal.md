@@ -34,4 +34,6 @@
 ![image](https://user-images.githubusercontent.com/44013936/90159707-be5bac80-ddcb-11ea-8a8b-1962112d604a.png)    
 
 -output    
-![image](https://user-images.githubusercontent.com/44013936/90159610-a08e4780-ddcb-11ea-90d1-b1d6a01c171b.png)
+![image](https://user-images.githubusercontent.com/44013936/90159610-a08e4780-ddcb-11ea-90d1-b1d6a01c171b.png)    
+
+-[코드 링크](https://github.com/sohyunwriter/ai-tech-archive/blob/master/descriptive_statistics/stats_cal.py)    
