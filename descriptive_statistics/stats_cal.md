@@ -30,10 +30,18 @@
 ## 📄 Simple GUI Application
 ![image](https://user-images.githubusercontent.com/44013936/90158945-a3d50380-ddca-11ea-81dc-941d534d2b69.png)    
 
+* (ex) 결측치가 없는 dataframe   
 -input    
-![image](https://user-images.githubusercontent.com/44013936/90159707-be5bac80-ddcb-11ea-8a8b-1962112d604a.png)    
+![image](https://user-images.githubusercontent.com/44013936/90232698-06281580-de58-11ea-88ae-57cfa5b072b8.png)     
 
 -output    
-![image](https://user-images.githubusercontent.com/44013936/90159610-a08e4780-ddcb-11ea-90d1-b1d6a01c171b.png)    
+![image](https://user-images.githubusercontent.com/44013936/90232799-222bb700-de58-11ea-8619-0f9efabef581.png)    
+
+* (ex) 결측치가 있는 dataframe    
+-input
+![image](https://user-images.githubusercontent.com/44013936/90232489-bb0e0280-de57-11ea-8228-3b28aec0a225.png)    
+
+-output    
+![image](https://user-images.githubusercontent.com/44013936/90232628-eb55a100-de57-11ea-8113-c3cd437c3ef7.png)    
 
 -[코드 링크](https://github.com/sohyunwriter/ai-tech-archive/blob/master/descriptive_statistics/stats_cal.py)    
