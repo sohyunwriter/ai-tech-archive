@@ -38,7 +38,7 @@
 ![image](https://user-images.githubusercontent.com/44013936/90232799-222bb700-de58-11ea-8619-0f9efabef581.png)    
 
 (ex) 결측치가 있는 dataframe    
--input
+-input     
 ![image](https://user-images.githubusercontent.com/44013936/90232489-bb0e0280-de57-11ea-8228-3b28aec0a225.png)    
 
 -output    
