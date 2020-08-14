@@ -73,21 +73,17 @@ def multipleMostCommon_before(df, columnName):  # 열별로 최빈값 알아내�
             mode_list.append(commonList[i][0])
     return mode_list
 
-def knowMostCommon_before(df):  # 최빈값(not used)
-    modelist = []
-    for i in range(len(df.columns)):
-        modelist.append(multipleMostCommon(df, df.columns[i]))
-    mode_series = pd.Series(modelist, index=df.columns, name='최빈값')
-    return mode_series
-
 def knowMostCommon(df):
     modelist = []
+    siglist = []
     for column in df.columns:
         temp = df[column].mode().astype(str).values.tolist()
         if len(temp) < 5: 
-            modelist.append(str(temp))
+            modelist.append(', '.join(temp))
         else:
-            modelist.append(str(temp[0]))
+            mylist = []
+            modelist.append(''.join(str(temp[0])) + str(" 등"))
+            siglist.append(1)
         #modelist.append() # [str, str]
     mode_series = pd.Series(modelist, index=df.columns, name='최빈값')
     mode_series = mode_series.astype(str)
@@ -107,7 +103,7 @@ def know_numericOrNon(ms, num):
         return nonNumericList
     else:
         return
- 
+
 def ds(df, ms):
     summary = df.describe()  # 1사분위수, 2사분위수, 3사분위수, 중앙값, 평균
     colName_series = ms.loc[:, 'name'].rename("구분").astype(str)
