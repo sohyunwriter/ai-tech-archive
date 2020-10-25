@@ -1,15 +1,15 @@
-##LIME 논문 정리 (정리중)
+## LIME 논문 정리 (정리중)
 
-##Paper
+## Paper
 ["Why Should I Trust You?": Explaining the Predictions of Any Classifier]( https://arxiv.org/abs/1602.04938)
 
-##Giuthub
+## Giuthub
 [github 코드](https://github.com/marcotcr/lime)
 
-##Youtube
+## Youtube
 [유튜브 설명](https://youtu.be/hUnRCxnydCc)
 
-##LIME
+## LIME
 1. 배경 – 기존 trust 의미와 확보방법 및 한계
 ① trusting a prediction
 ② trusting a model
@@ -44,7 +44,7 @@ L(f,\ g,\pi_x) : 정의된 pi와 주어진 f에 대해, g가 주어진 f를 appr
 
 **파이썬 패키지: lime
 
-##SP(Submodular Pick) LIME
+## SP(Submodular Pick) LIME
 1. 정의 및 특징
 - method that selects a set of representative instances with explanations to address the trusting the model problem via submodular optimization
 -LIME은 한 instance의 explanation을 설명할 수 있지만, model의 trust는 말할 수 없음
@@ -55,20 +55,20 @@ L(f,\ g,\pi_x) : 정의된 pi와 주어진 f에 대해, g가 주어진 f를 appr
 2. 알고리즘
  
 
-##활용가능성
+## 활용가능성
 -수치 데이터에 lime 모델 적용한 결과
  
 
-###LIME 장단점 
+### LIME 장단점 
 1) (장점) 어떤 블랙박스 모델이든 사람이 이해할 수 있는 수준으로 설명 가능. 내부 동작 방식을 설명할 수 있다는 점에서 실무에서 활용 가능할 듯.
 2) (단점) 결과값을 가지고 거꾸로 유추하는 방식이므로 추가 학습이 필요하고, 속도 느림(e.g. Inception Net의 한 instance를 설명하는 데 10분이 걸린다고 함)
 3) (단점) input <-> interpretable feature의 가역적인 변환이 가능한 경우에만 사용할 수 있음 
 
-###Grad Cam과의 차이
+### Grad Cam과의 차이
 -공통점: 입력이 주어졌을 때 모델 행동 분석하는 기법
 -차이점: Grad CAM (Gradient-weighted Class Activation Mapping, arxiv )은 CNN 모형에 적용할 수 있는 모형 해석 방법론. CNN 층(마지막)에 들어가는 그래디언트를 가지고 자료의 어느 부분에 가중치를 주는지 계산하는 방법. Global average pooling이라는 레이어를 가진 특수한 CNN 구조에서만 사용 가능하고, 기울기 정보 없이 순전파 때 액티베이션 값을 활용
 
-##참고문헌
+## 참고문헌
 [Why Should I Trust You? Explaining the Predictions of Any Classifier 논문 정리](http://shuuki4.github.io/deep%20learning/2016/08/24/Why-Should-I-Trust-You-%EB%85%BC%EB%AC%B8-%EC%A0%95%EB%A6%AC.html)
 https://dreamgonfly.github.io/blog/lime/
 
